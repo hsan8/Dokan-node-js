@@ -13,6 +13,7 @@ insert this code:<br>
 for routes file <code>test.js</code><br>
 insert:<br>
 <code> <br>
+var config = require('./config.js');
 var fetch = require('node-fetch');<br>
 exports.getAllStores = function(callback) {
     fetch(config.dokan.endpoint + 'dokan/v1/stores/3', config.dokan.header)
